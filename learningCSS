@@ -1,0 +1,34 @@
+# リセットCSS
+リセットCSSのメリット  
+- ブラウザごとの差異を無くす
+- ブラウザ固有のバグを修正できる
+- ブラウザごとのCSSを書かなくて済む
+
+## 使い方
+reset.cssと自作のCSSstyle.cssの2種類のCSSファイルを用意
+reset.cssを先に読み込む
+```
+<head>
+  <link rel="stylesheet" href="path/to/reset.css">
+  <link rel="stylesheet" href="path/to/style.css">
+</head>
+```
+
+## リセットCSSは既存品を使えばよい
+- デフォルトのスタイルがないタイプ
+marginやpaddingなどをすべて0にして、font-sizeもすべて統一されます。余計なスタイルが付かないので管理しやすいですが、その分自分でスタイルを当てないといけないので場合によっては手間が少し増えます。
+    - The New CSS Reset
+    - destyle.css
+
+
+- デフォルトのスタイルがないタイプ
+marginやpaddingがそれぞれ用意されていたり、h1タグやh2タグのfont-sizeなどはタグに合わせたサイズで表示されたり、ulタグやolタグも左側にpaddingが付けられるなどデフォルト状態である程度スタイルが整えられています。
+    - Normalize.css
+    - A modern CSS reset
+    - sanitize.css
+    - The Modern CSS Reset
+    - @acab/reset.css
+    - ress.css
+    - Reboot.css
+
+
